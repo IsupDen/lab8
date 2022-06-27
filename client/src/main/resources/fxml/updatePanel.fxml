@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UpdateController">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="390.0" prefWidth="330.0" style="-fx-spacing: 5;">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.name_label" />
+                  <TextField fx:id="nameField" prefHeight="26.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="44.0" prefHeight="34.0" prefWidth="340.0" style="-fx-spacing: 5;">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.coordinateY_label" />
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" text="X" />
+                  <TextField fx:id="coordinateXField" prefHeight="26.0" prefWidth="80.0" />
+                  <Label layoutX="154.0" layoutY="10.0" prefHeight="30.0" text="Y" />
+                  <TextField fx:id="coordinateYField" layoutX="167.0" layoutY="10.0" prefHeight="26.0" prefWidth="80.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="79.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.minimal_point_label" />
+                  <TextField fx:id="minimalPointField" prefHeight="26.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="113.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.pqm_label">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="personalQualitiesMinimumField" prefHeight="26.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="148.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.difficulty_label" />
+                  <ChoiceBox fx:id="difficultyChoiceBox" prefHeight="26.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="182.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.author_name_label" />
+                  <TextField fx:id="authorNameField" prefHeight="26.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="216.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.author_height_label" />
+                  <TextField fx:id="authorHeightField" prefHeight="26.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="251.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.author_eye_color_label" />
+                  <ChoiceBox fx:id="authorEyeColorChoiceBox" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="285.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.author_hair_color_label" />
+                  <ChoiceBox fx:id="authorHairColorChoiceBox" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="320.0" prefHeight="34.0" prefWidth="340.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="%add_panel.author_nationality_label" />
+                  <ChoiceBox fx:id="authorNationalityChoiceBox" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="submitBtn" disable="true" layoutX="253.0" layoutY="400.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="101.0" text="%update_panel.update_button" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button layoutX="12.0" layoutY="400.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="102.0" text="%add_panel.cancel_button" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+   </children>
+</AnchorPane>

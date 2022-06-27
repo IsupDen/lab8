@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SelectDifficultyController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="28.0" prefWidth="170.0" text="%enter_difficulty_panel.label" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="difficultyChoiceBox" layoutX="65.0" layoutY="63.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button layoutX="202.0" layoutY="101.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="80.0" text="%enter_difficulty_panel.delete_button" />
+      <Button layoutX="14.0" layoutY="101.0" mnemonicParsing="false" onAction="#cancel" prefHeight="35.0" prefWidth="80.0" text="%enter_difficulty_panel.cancel_button" />
+   </children>
+</Pane>

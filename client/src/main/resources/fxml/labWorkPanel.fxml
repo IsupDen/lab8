@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="mainPane" maxWidth="300.0" minWidth="215.0" prefHeight="550.0" prefWidth="243.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LabWorkController">
+   <children>
+      <VBox prefHeight="550.0" prefWidth="300.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%lab_panel.id_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="idLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.name_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="nameLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%lab_panel.coordinates_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="150.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" text="X" textAlignment="RIGHT" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="coordinateXLabel" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true" />
+                        <Label alignment="CENTER" layoutX="76.0" layoutY="10.0" prefHeight="40.0" text="Y" textAlignment="RIGHT" wrapText="true" />
+                        <Label fx:id="coordinateYLabel" alignment="CENTER" layoutX="94.0" layoutY="10.0" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="80.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%lab_panel.date_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="creationDateLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="116.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.minimal_point_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="minimalPointLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="151.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.pqm_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="personalQualitiesMinimumLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="186.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.difficulty_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="difficultyLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="221.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.author_name_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="authorNameLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="256.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.author_height_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="authorHeightLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.author_eye_color_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="authorEyeColorLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="327.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.author_hair_color_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="authorHairColorLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="362.0" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="150.0" text="%add_panel.author_nationality_label" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="authorNationalityLabel" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="150.0" text="Label" textAlignment="RIGHT" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane fx:id="closeBtn" layoutX="209.0" layoutY="14.0" onMouseClicked="#close" prefHeight="20.0" prefWidth="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Line endX="20.0" endY="20.0" strokeWidth="3.0" />
+            <Line endX="20.0" startY="20.0" strokeWidth="3.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
